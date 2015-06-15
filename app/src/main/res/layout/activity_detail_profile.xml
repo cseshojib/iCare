@@ -1,0 +1,257 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.mobileappdevelop.icare.DetailProfileActivity">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+        <LinearLayout
+            android:id="@+id/portfolioTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#F1827A">
+            <ImageView
+                android:id="@+id/ivWelcomeImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="16dp"/>
+
+            <TextView
+                android:id="@+id/tvPortfolioTitle"
+                android:text="Detail Information"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="28sp"
+                android:textColor="#fff"
+                android:textStyle="italic|bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@+id/ivWelcomeImage"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/line1"
+            android:layout_below="@+id/portfolioTitle"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:orientation="horizontal"
+            android:background="@color/background_floating_material_light"/>
+        <LinearLayout
+            android:id="@+id/line2"
+            android:layout_below="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="horizontal"
+            android:background="@color/switch_thumb_normal_material_dark"/>
+
+        <TableLayout
+            android:id="@+id/tlPersonalInfo"
+            android:layout_below="@id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Personal Information"
+                    android:textSize="22sp"
+                    android:gravity="center"
+                    android:textColor="@color/accent_material_light"
+                    android:textStyle="italic|bold"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:padding="5dip">
+                <TextView
+                    android:text="First Name"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic"/>
+                <TextView
+                    android:id="@+id/tvFirstName"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="8dp"
+                    android:textSize="18sp"
+                    android:hint="put amount"
+                    android:layout_height="wrap_content"/>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:padding="5dip">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Last Name: "
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic"/>
+                <TextView
+                    android:id="@+id/tvLastName"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="8dp"
+                    android:textSize="18sp"
+                    android:hint="put amount"
+                    android:layout_height="wrap_content"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:padding="5dip">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Gender "
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic"/>
+                <TextView
+                    android:id="@+id/tvGender"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="8dp"
+                    android:textSize="18sp"
+                    android:hint="put amount"
+                    android:layout_height="wrap_content"/>
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:id="@+id/tlMedicalInfo"
+            android:layout_below="@+id/tlPersonalInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:padding="5dip">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Medical Information"
+                    android:textSize="22sp"
+                    android:gravity="center"
+                    android:textColor="@color/accent_material_light"
+                    android:textStyle="italic|bold"
+                    android:layout_marginTop="8dp"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:padding="5dip">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Date of Birth"
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic"/>
+                <TextView
+                    android:id="@+id/tvDateOfBirth"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="8dp"
+                    android:textSize="18sp"
+                    android:hint="put amount"
+                    android:layout_height="wrap_content"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:padding="5dip">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Blood Group "
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic"/>
+                <TextView
+                    android:id="@+id/tvBloodGroup"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="8dp"
+                    android:textSize="18sp"
+                    android:hint="put amount"
+                    android:layout_height="wrap_content"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:padding="5dip">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Height: "
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic"/>
+                <TextView
+                    android:id="@+id/tvHeight"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="8dp"
+                    android:textSize="18sp"
+                    android:hint="put amount"
+                    android:layout_height="wrap_content"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:padding="5dip">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Weight "
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic"/>
+                <TextView
+                    android:id="@+id/tvWeight"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="8dp"
+                    android:textSize="18sp"
+                    android:hint="put amount"
+                    android:layout_height="wrap_content"/>
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:padding="5dip">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="BMI: "
+                    android:textSize="20sp"
+                    android:textStyle="bold|italic"/>
+                <TextView
+                    android:id="@+id/tvBMI"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="8dp"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content"
+                    android:text="BMI"/>
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+</ScrollView>
