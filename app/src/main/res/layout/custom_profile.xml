@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="80dip"
         android:orientation="vertical">
-        <!--<TextView
+        <TextView
             android:id="@+id/tvName"
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -23,7 +23,7 @@
             android:textColor="#000"
             android:text="Name"
             android:paddingLeft="10dp"
-            android:gravity="center_vertical"/>-->
+            android:gravity="center_vertical"/>
 
     </LinearLayout>
 

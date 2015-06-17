@@ -9,5 +9,6 @@
     <string name="title_activity_detail_profile">DetailProfileActivity</string>
     <string name="EDIT">edit</string>
     <string name="title_activity_edit">EditActivity</string>
+    <string name="title_activity_vaccine_info_entry">vaccineInfoEntryActivity</string>
 
 </resources>
